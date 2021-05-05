@@ -14,38 +14,74 @@
     <h2>Heaviest Birds - Table</h2>
     <table>
         <!--th is table header-->
-        <tr>
-            <th>Animal</th>
-            <th>Average Mass [kg (lb)]</th>
-            <th>Maxium Mass [kg(lb)]</th>
-            <th>Flighted</th>
-        </tr>
-        <tr>
-            <!--Example of td which stands for table data / should be table cell as it represents 1 cell-->
-            <td>Common Ostrich</td>
-            <td>104 (203)<sup>[9]</sup></td>
-            <td>156.8 (346)</td>
-            <td>No</td>
-        </tr>
-        <!--tr stands for table row and it's used to organize td-->
-        <tr>
-            <td>Somali Ostrich</td>
-            <td>90 (200)<sup>[9]</sup></td>
-            <td>130 (287)</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Domestic turkey/wild turkey</td>
-            <td>13.5 (29.8)</td>
-            <td>39 (86)</td>
-            <td>Yes</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average Mass [kg (lb)]</th>
+                <th>Maxium Mass [kg(lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Example of td which stands for table data / should be table cell as it represents 1 cell-->
+                <td>Common Ostrich</td>
+                <td>104 (203)<sup>[9]</sup></td>
+                <td>156.8 (346)</td>
+                <td>No</td>
+            </tr>
+            <!--tr stands for table row and it's used to organize td-->
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90 (200)<sup>[9]</sup></td>
+                <td>130 (287)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Domestic turkey/wild turkey</td>
+                <td>13.5 (29.8)</td>
+                <td>39 (86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+        <!--There is also tfooter and that's used for the bottom column like totals-->
     </table>
 
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
+    <h2>V2</h2>
+    <table>
+        <thead>
+            <!--row is verticle and col is horizontal-->
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Common Ostrich</td>
+                <td>104</td>
+                <td>203<sup>[9]</sup></td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200<sup>[9]</sup></td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Domestic turkey/wild turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 
