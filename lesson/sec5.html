@@ -10,6 +10,8 @@
 
 <body>
     <h1>HTML Forms & Tables</h1>
+    <a href="../chickens.html">Go home</a>
+    <a href="../lessons.html">Back</a>
 
     <h2>Heaviest Birds - Table</h2>
     <table>
@@ -82,6 +84,40 @@
             </tr>
         </tbody>
     </table>
+
+    <h1>Forms Demon</h1>
+
+    <form action="/tacos">
+        <!--Labels are to associate with an input to tie the two together-->
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+
+        <p>
+            <label for="password">Enter a Password: </label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <p>
+            <label for="color">Enter a Color: </label>
+            <input id="color" type="color">
+        </p>
+
+        <p>
+            <label for="number">Enter a Number: </label>
+            <input id="number" type="number" placeholder="enter a number">
+        </p>
+        <!-- This button does not submit the form because of its type -->
+        <button type="button">Submit (type)</button>
+        <!-- This button will submit the form -->
+        <button>Submit!!</button>
+        <!-- So will this one: -->
+        <input type="submit" value="Click Me to Submit!">
+
+    </form>
+    <hr>
+    <!-- Outside of the form the button has no behavior -->
+    <button>Not within a form</button>
 
 </body>
 
