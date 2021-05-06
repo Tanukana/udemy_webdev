@@ -105,7 +105,7 @@
 
         <p>
             <label for="number">Enter a Number: </label>
-            <input id="number" type="number" placeholder="enter a number" name="number">
+            <input id="number" type="number" placeholder="amount" name="number" step="10" min="0" max="1000">
         </p>
 
         <!-- This button does not submit the form because of its type -->
@@ -144,9 +144,6 @@
     <!--id identifies the element and for will target the id - checked starts it off checked.-->
     <h3>Checkbox & Radio</h3>
     <form action="/corgis">
-        <input type="checkbox" name="agree_tos" id="agree" checked>
-        <label for="agree">I agree to everything, sure.</label>
-        <!--Different between radio and checkbox is radio can only select for 1 option-->
         <p>
             <!--Tested the for and id names are case sensitive-->
             <!--Value actaully throws a value into the url to be specific about what is being selected-->
@@ -157,6 +154,9 @@
             <label for="shiba">Shiba</label>
             <input type="radio" id="shiba" name="breed" value="shiba">
         </p>
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything, sure.</label>
+        <!--Difference between radio and checkbox is radio can only select for 1 option-->
         <h3>Select & Option</h3>
         <p>
             <label for="breed_select">Select a breed.</label>
@@ -168,6 +168,18 @@
                 <option value="pug">Pug</option>
                 <option value="shiba">Shiba</option>
             </select>
+        </p>
+
+        <h3>Range & Textarea</h3>
+        <p>
+            <label for="price">Price:</label>
+            <input type="range" name="price_range" id="price" step="100" value="1200" min="0" max="3000">
+        </p>
+        <p>
+            <label for="about">Tell us about your living space</label>
+            <br>
+            <!--take note of the placeholder attribute-->
+            <textarea name="spaceinfo" id="about" cols="50" rows="10" placeholder="Tell us about you..."></textarea>
         </p>
         <p>
             <button>Submit</button>
