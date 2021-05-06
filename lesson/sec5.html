@@ -186,6 +186,28 @@
         </p>
     </form>
 
+    <h3>Validations Demo</h3>
+    <form action="/somewhere">
+
+        <label for="first">Enter first name: </label>
+        <input type="text" name="firstname" id="first" required>
+        <p>
+            <label for="username">Username: </label>
+            <input type="text" name="user" id="username" minlength="2" maxlength="20" required>
+        </p>
+
+        <p>
+            <label for="emailad">Email: </label>
+            <input type="email" name="email" id="emailad" required>
+        </p>
+        <p>
+            <label for="url">Enter a link: </label>
+            <input type="url" name="link" id="url" required>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
 </body>
 
 </html>
