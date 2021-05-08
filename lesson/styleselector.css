@@ -1,0 +1,34 @@
+/* Universal selector */
+* {
+    background-color: #fdffb6;
+}
+/* Element selector */
+button {
+    font-size: 30px;
+    background-color: #caffbf;
+}
+
+p {
+    font-size: 24px;
+}
+/* you can select multiple things with a comma here*/
+h1, h2 {
+    color: #ffadad;
+}
+/* ID selector in the example of id and for */
+/* Should only have 1 ID per thing */
+#signup {
+    background-color: #ffc6ff;
+    color: #fffffc;
+}
+/* Class selector ( class can be applied to multiple elements ) */
+.tag {
+    background-color: #2d6a4f;
+    color: #bde0fe;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* Descendant selectors / Class with a Descendant selector */
+.post p {
+    color: #81b29a;
+}
